@@ -1,0 +1,6 @@
+@media (min-width: 992px) {
+  .news-input {
+    width: 75%;
+    margin-left: 3rem;
+  }
+}
