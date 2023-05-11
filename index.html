@@ -65,9 +65,87 @@
               laboriosam fugiat eos reiciendis. Suscipit, fugiat? Necessitatibus
               officia fugit, nam quam placeat vitae.
             </p>
-            <button class="btn btn-primary btn-lg text-uppercase">
+            <button
+              class="btn btn-primary btn-lg text-uppercase"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
               start today
             </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="enroll"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog text-dark">
+                <div class="modal-content">
+                  <div class="modal-header bg-primary text-light">
+                    <h1 class="modal-title fs-5">
+                      Fill out this we will go back to you.
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="firt-name" class="form-label"
+                          >First Name:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="firt-name"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="last-name" class="form-label"
+                          >Last Name:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="last-name"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label"
+                          >Email address:</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          aria-describedby="emailHelp"
+                        />
+                        <div id="emailHelp" class="form-text">
+                          We'll never share your email with anyone else.
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <img
             src="img/showcase.svg"
